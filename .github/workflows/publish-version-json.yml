@@ -1,0 +1,62 @@
+name: Publish version.json
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "package.json"
+
+jobs:
+  publish-version-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checka ut app-repot
+        uses: actions/checkout@v4
+
+      - name: Läs version från package.json
+        id: package
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Checka ut publikt versionsrepo
+        uses: actions/checkout@v4
+        with:
+          repository: OaksAB/oaks-egenkontroll-scada-version
+          token: ${{ secrets.VERSION_REPO_TOKEN }}
+          path: version-repo
+          ref: master
+
+      - name: Skriv version.json
+        run: |
+          cat > version-repo/version.json <<EOF
+          {
+            "app": "Oaks Egenkontroll SCADA",
+            "version": "${{ steps.package.outputs.version }}",
+            "releaseName": "Oaks Egenkontroll SCADA ${{ steps.package.outputs.version }}",
+            "releaseUrl": "https://github.com/OaksAB/WebportQA/releases/latest",
+            "downloadUrl": "https://github.com/OaksAB/WebportQA/releases/latest",
+            "notes": "Ny version finns tillgänglig.",
+            "publishedAt": "$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+          }
+          EOF
+
+      - name: Commit och push om version.json ändrats
+        working-directory: version-repo
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          git add version.json
+
+          if git diff --cached --quiet; then
+            echo "Inga ändringar i version.json"
+            exit 0
+          fi
+
+          git commit -m "Update version.json to ${{ steps.package.outputs.version }}"
+          git push
