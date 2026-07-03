@@ -1,9 +1,9 @@
 {
   "app": "Oaks Egenkontroll SCADA",
-  "version": "2.1.9",
+  "version": "2.1.8",
   "releaseName": "Oaks Egenkontroll SCADA 2.1.8",
   "releaseUrl": "https://github.com/OaksAB/WebportQA/releases/latest",
   "downloadUrl": "https://github.com/OaksAB/WebportQA/releases/latest",
-  "notes": "Förbättrad OCR, texteditor och uppdateringskontroll.",
-  "publishedAt": "2026-07-03T09:00:00.000Z"
+  "notes": "Ny version finns tillgänglig.",
+  "publishedAt": "2026-07-03T10:37:09Z"
 }
