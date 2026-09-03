@@ -1,9 +1,8 @@
 {
   "app": "Oaks Egenkontroll SCADA",
   "version": "2.2.3",
-  "releaseName": "Oaks Egenkontroll SCADA 2.2.3",
-  "releaseUrl": "https://github.com/OaksAB/WebportQA/releases/latest",
-  "downloadUrl": "https://github.com/OaksAB/WebportQA/releases/latest",
-  "notes": "Ny version finns tillgänglig.",
-  "publishedAt": "2026-09-03T12:09:03Z"
+  "releaseUrl": "https://github.com/OaksAB/WebPortQA/releases/latest",
+  "downloadUrl": "https://github.com/OaksAB/WebPortQA/releases/download/release/Oaks.Egenkontroll.SCADA.exe",
+  "notes": "Version 2.2.3\n\n- Förbättrad systemsammanställning som ger bättre överblick i stora projekt.\n- Kontrollboxar och anmärkningar bevaras när objekt eller system sorteras.\n- Tydligare ikoner för att nåla fast och nåla av verktygsfältet.\n- Förbättrad layout i Alla avvikelser.\n- Dialogrutor stängs inte längre oavsiktligt när text markeras.",
+  "publishedAt": "2026-09-03T12:17:44.782Z"
 }
