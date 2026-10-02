@@ -3,6 +3,6 @@
   "version": "2.2.6",
   "releaseUrl": "https://github.com/OaksAB/WebPortQA/releases/latest",
   "downloadUrl": "https://github.com/OaksAB/WebPortQA/releases/download/release/Oaks.Egenkontroll.SCADA.exe",
-  "notes": "Version 2.2.5\n- Test verionsinfo\n- Förbättrad systemsammanställning som ger bättre överblick i stora projekt.\n- Fixat bugg där kontrollboxar och anmärkningar försvunnit när objekt eller system sorteras.\n- Tydligare ikoner för att nåla fast och nåla av verktygsfältet.\n- Förbättrad layout i Alla avvikelser.\n- Dialogrutor stängs inte längre oavsiktligt när text markeras.",
+  "notes": "Version 2.2.6\n- Ny funktion: Ctrl+scroll zoomar flödesbilden i provningsläget.\n- Alla kontrollpunkter visar nu hela listan och växer med innehållet.\n- Vald kontrollant sparas och återställs korrekt vid skapande och öppning av system.\n- Förbättrad layout för provningsförfarande i HTML-exporten."
   "publishedAt": "2026-10-02T10:47:10.930Z"
 }
