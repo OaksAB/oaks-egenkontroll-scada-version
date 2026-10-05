@@ -1,9 +1,8 @@
 {
   "app": "Oaks Egenkontroll SCADA",
-  "version": "2.2.6",
-  "releaseName": "Oaks Egenkontroll SCADA 2.2.6",
+  "version": "2.2.7",
   "releaseUrl": "https://github.com/OaksAB/WebPortQA/releases/latest",
-  "downloadUrl": "https://github.com/OaksAB/WebPortQA/releases/latest",
-  "notes": "Version 2.2.6\n- Ny funktion: Ctrl+scroll zoomar flödesbilden i provningsläget.\n- Alla kontrollpunkter visar nu hela listan och växer med innehållet.\n- Vald kontrollant sparas och återställs korrekt vid skapande och öppning av system.\n- Förbättrad layout för provningsförfarande i HTML-exporten.",
-  "publishedAt": "..."
+  "downloadUrl": "https://github.com/OaksAB/WebPortQA/releases/download/release/Oaks.Egenkontroll.SCADA.exe",
+  "notes": "Version 2.2.7\n\nBuggfix:\n- Kontrollpunkter försvann vid inläsning av ny systembild.",
+  "publishedAt": "2026-10-05T11:15:26.069Z"
 }
