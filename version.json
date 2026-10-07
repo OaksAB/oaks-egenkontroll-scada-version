@@ -1,8 +1,8 @@
 {
   "app": "Oaks Egenkontroll SCADA",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "releaseUrl": "https://github.com/OaksAB/WebPortQA/releases/latest",
   "downloadUrl": "https://github.com/OaksAB/WebPortQA/releases/download/release/Oaks.Egenkontroll.SCADA.exe",
-  "notes": "Version 2.2.7\n\nBuggfix:\n- Kontrollpunkter försvann vid inläsning av ny systembild.",
-  "publishedAt": "2026-10-05T11:15:26.069Z"
+  "notes": "Version 2.2.8\n\n- Förbättrade taggförslag på kontrollboxar. Ignorerar texter från blå, lila gröna texter som är typiska börvärden / mätvärden. \n- Försök till förbättrad storlek på kontrollboxar i smart-läget.",
+  "publishedAt": "2026-10-07T07:07:28.163Z"
 }
